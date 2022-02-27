@@ -1,0 +1,394 @@
+* {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: black;
+  position: relative;
+}
+
+nav {
+  height: 100px;
+  align-items: center;
+  display: flex;
+  position: fixed;
+  z-index: 2;
+}
+
+nav > a > img {
+  width: 50px;
+  margin: 0% 2%;
+}
+
+nav > a {
+  color: white;
+  margin: 0% 50px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+nav > a:hover {
+  color: deeppink;
+}
+
+header {
+  position: relative;
+  height: 100vh;
+}
+
+#myVideo {
+  position: absolute;
+  z-index: -1;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+  min-width: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown .dropbtn {
+  font-size: 20px;
+  font-weight: bolder;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 30px;
+  background-color: inherit;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 20px 16px;
+  text-decoration: none;
+  font-weight: bolder;
+  display: block;
+  text-align: left;
+  transition: 0.3s;
+}
+
+.dropdown-content a:hover {
+  background-color: white;
+  color: gold;
+  transform: scale(1.1);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown .dropbtn:hover {
+  transition: 0.25s;
+  color: deeppink;
+}
+
+.textHeader {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  color: white;
+  font-family: arial;
+  font-weight: bolder;
+  font-size: 50px;
+  width: fit-content;
+}
+
+article {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  margin-bottom: 3%;
+}
+
+article h1 {
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+article p {
+  word-spacing: 5px;
+  width: 80%;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.learnMore {
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 10%;
+  font-weight: bolder;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: deeppink;
+  color: white;
+}
+
+.learnMore:hover {
+  cursor: pointer;
+  background-color: white;
+  color: deeppink;
+}
+
+main {
+  width: 90%;
+  margin-top: 10%;
+  margin-left: 5%;
+  display: flex;
+}
+
+.gambar1 {
+  margin-top: 2%;
+}
+
+.gambar1 img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  border-radius: 5%;
+  width: 100%;
+}
+
+.gambar1 img:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
+.bestSingle {
+  margin-top: 10%;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.bestSingleImg > div {
+  display: flex;
+  flex-direction: row;
+}
+
+.bestSingleImg img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  height: 200px;
+  width: 15%;
+}
+
+.bestSingleImg > div:hover img {
+  transition: 0.25s;
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
+.bestSingle iframe {
+  transition: 0.3s;
+  opacity: 0;
+  transform: translate(-300px, 0);
+}
+
+.bestSingleImg > div:hover iframe {
+  transition: 0.3s;
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.bestSingleImg > div:hover .text {
+  transition: 0.3s;
+  transform: translate(0, 0);
+}
+
+.bestSingleImg > div:hover .text1 {
+  color: gold;
+}
+
+.text {
+  transform: translate(-600px, 0);
+}
+
+.exploreMore {
+  text-decoration: none;
+  color: white;
+  background-color: deeppink;
+  font-weight: bolder;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 10%;
+  padding: 10px;
+  width: 130px;
+  margin-bottom: 10%;
+}
+
+.exploreMore:hover {
+  cursor: pointer;
+  background-color: white;
+  color: deeppink;
+}
+
+.text {
+  margin-left: 5%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.text1 {
+  font-weight: bolder;
+  font-style: bold;
+}
+
+.text2 {
+  font-weight: lighter;
+}
+
+footer {
+  margin-top: 5%;
+  margin-left: 5%;
+  position: relative;
+}
+
+footer a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  margin-right: 8%;
+}
+
+.footerText > div {
+  font-weight: bolder;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 30%;
+}
+
+footer a:hover {
+  color: deeppink;
+}
+
+.footerText {
+  margin-top: 2%;
+  text-decoration: none;
+  color: grey;
+  text-align: justify;
+  width: 50%;
+  display: flex;
+  width: 100%;
+}
+
+.footerText p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  width: 50%;
+}
+
+.quotes {
+  position: relative;
+  height: 120vh;
+  background: black;
+}
+
+.quotesGambar {
+  background-image: url("assets/png/about/3.jpg");
+  height: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.5;
+}
+
+.quotesText {
+  position: absolute;
+  z-index: 1;
+  top: 300px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 50px;
+  width: 90%;
+  text-align: justify;
+  margin-left: 5%;
+}
+
+.footerText > div > h1:first-child {
+  color: grey;
+}
+
+.footerText > div > h1:last-child {
+  color: white;
+}
+
+.footerText > div > h1:last-child:hover {
+  color: deeppink;
+}
+
+.bubble-animation {
+  position: absolute;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  bottom: -70px;
+}
+
+.bubble-animation > img {
+  width: 50px;
+  animation: bubble 10s linear infinite;
+}
+
+@keyframes bubble {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-600vh);
+    opacity: 0;
+  }
+}
+
+.bubble-animation > img:nth-child(1) {
+  animation-delay: 1s;
+  width: 25px;
+}
+.bubble-animation > img:nth-child(2) {
+  animation-delay: 2s;
+}
+.bubble-animation > img:nth-child(3) {
+  animation-delay: 5s;
+  width: 25px;
+}
+.bubble-animation > img:nth-child(4) {
+  animation-delay: 4s;
+}
+.bubble-animation > img:nth-child(5) {
+  animation-delay: 3s;
+  width: 20px;
+}
+.bubble-animation > img:nth-child(6) {
+  animation-delay: 2s;
+}
+.bubble-animation > img:nth-child(7) {
+  animation-delay: 1s;
+  width: 25px;
+}
+.bubble-animation > img:nth-child(8) {
+  animation-delay: 4s;
+}
